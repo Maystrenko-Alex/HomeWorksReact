@@ -1,0 +1,41 @@
+.message {
+  display: flex;
+  max-width: max-content;
+  background-color: yellow;
+  border: 3px solid yellow;
+  align-items: flex-end;
+}
+.messageAva {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.messageBlockCorner {
+ width: 20px;
+ height: 20px;
+ background: radial-gradient(circle at 0 0, yellow 20px, rgb(31, 53, 35) 0);
+}
+.messageBlock {
+  min-width: 100px;
+  background-color: rgb(31, 53, 35);
+  border-radius: 5px 5px 5px 0;
+  padding: 0 20px ;
+}
+.messageBlockName {
+  color: rgb(85, 84, 161);
+  font-size: 20px;
+}
+.messageBlockText {
+  color: rgb(140, 195, 197);
+  font-size: 18px;
+  padding: 5px 0;
+}
+.messageBlockTime {
+  color: green;
+  background-color: rgb(31, 53, 35);
+  text-align: end;
+  font-size: 16px;
+  
+}
