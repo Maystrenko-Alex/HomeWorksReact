@@ -1,3 +1,10 @@
 .someClass {
+  width:250px;
+  border: 1px solid black;
+}
 
+.buttonBlock {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
 }
