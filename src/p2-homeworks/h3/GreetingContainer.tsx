@@ -7,16 +7,12 @@ type GreetingContainerPropsType = {
   addUserCallback: (name: string) => void
 }
 
-// более простой и понятный для новичков
-// function GreetingContainer(props: GreetingPropsType) {
-
-// более современный и удобный для про :)
-// уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUserCallback }) => { // деструктуризация пропсов
-  const [name, setName] = useState<string>('') // стейт для инпута
-  const [error, setError] = useState<true | false>(false) // стейт для ошибки
+  const [name, setName] = useState<string>('');
+  const [error, setError] = useState<true | false>(false);
+  const totalUsers = users.length;
 
-  const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // обрабатывает вводимое имя в инпуте
+  const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
     const nameInput = e.currentTarget.value.trim();
     if (nameInput) {
       setName(nameInput);
@@ -37,7 +33,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUse
     }
   }
 
-  const totalUsers = users.length
 
   return (
     <Greeting

@@ -1,7 +1,12 @@
 .wrapper {
     display: flex;
-    padding: 15px;
+    padding: 10px;
     flex-direction: column;
+    background-color: bisque;
+    width: fit-content;
+}
+.input_wrapper{
+  height: 45px;
 }
 .error {
   border: 2px solid red;
