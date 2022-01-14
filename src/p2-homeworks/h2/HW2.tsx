@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Affairs from './Affairs'
 
 // types
@@ -6,22 +6,22 @@ export type AffairPriorityType = 'high' | 'low' | 'middle' // need to fix any
 export type AffairType = {
     _id: number
     name: string
-    priority: 'high' | 'low' | 'middle' 
+    priority: 'high' | 'low' | 'middle'
 } // need to fix any
 
 export type FilterType = 'all' | AffairPriorityType
 
 // constants
 const defaultAffairs: Array<AffairType> = [ // need to fix any
-    {_id: 1, name: 'React', priority: 'high'},
-    {_id: 2, name: 'anime', priority: 'low'},
-    {_id: 3, name: 'games', priority: 'low'},
-    {_id: 4, name: 'work', priority: 'high'},
-    {_id: 5, name: 'html & css', priority: 'middle'},
+    { _id: 1, name: 'React', priority: 'high' },
+    { _id: 2, name: 'anime', priority: 'low' },
+    { _id: 3, name: 'games', priority: 'low' },
+    { _id: 4, name: 'work', priority: 'high' },
+    { _id: 5, name: 'html & css', priority: 'middle' },
 ]
- 
+
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { 
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => {
     // need to fix any
     if (filter === 'all') return affairs
     else return affairs.filter(affair => affair.priority === filter)// need to fix
@@ -35,12 +35,12 @@ function HW2() {
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
-    
-    const deleteAffairCallback = (_id: number) => setAffairs(()=>deleteAffair(affairs, _id)) // need to fix any
+
+    const deleteAffairCallback = (_id: number) => setAffairs(() => deleteAffair(affairs, _id)) // need to fix any
 
     return (
         <div>
-            <hr/>
+            <hr />
             homeworks 2
 
             {/*should work (должно работать)*/}
@@ -50,10 +50,10 @@ function HW2() {
                 deleteAffairCallback={deleteAffairCallback}
             />
 
-            <hr/>
+            <hr />
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
-            <hr/>
+            <hr />
         </div>
     )
 }

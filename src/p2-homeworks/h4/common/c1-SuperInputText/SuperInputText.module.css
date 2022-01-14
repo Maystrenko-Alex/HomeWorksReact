@@ -1,12 +1,31 @@
-.superInput {
+/* .superInput */
+.styleInputDef{
+  padding: 5px 10px;
+  margin-top: 15px;
+}
+/* .superInput */
 
+.styleInputDef::placeholder {
+  color: #212529;
+  opacity: 0.4;
 }
 
+/* .superInput */
+.styleInputDef:focus {
+  color: #212529;
+  background-color: #fff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+  border: 2px solid red;
+    
 }
 
 .error {
-    color: red;
+  color: red;
 }
+/* .styleInputDef{
+  padding: 5px 10px;
+  margin-top: 15px;
+} */

@@ -6,7 +6,7 @@
     width: fit-content;
 }
 .input_wrapper{
-  height: 45px;
+  height: 80px;
 }
 .error {
   border: 2px solid red;

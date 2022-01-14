@@ -5,6 +5,7 @@
   border: 1px dotted black;
   margin: 1px;
   background-color: aquamarine;
+  align-items: center;
 }
 .affairName {
   flex: 1;
