@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+}
+.wrapper a {
+  text-decoration: none;
+  padding: 3px;
+  border: 1px solid black;
+  margin: 0px 10px;
+  background-color: blanchedalmond;
+}
+.wrapper a:hover{
+  transform: translate(0, -10%)
+}
+
+.btn {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  /* padding: 15px; */
+  margin: auto 30px;
+  background-color: rgb(171, 221, 204);
+}
+@keyframes glowing {
+  0% { background-color: #8b8f8a; box-shadow: 0 0 3px #8b8f8a; }
+  50% { background-color: rgb(171, 221, 204); box-shadow: 0 0 10px rgb(171, 221, 204); }
+  100% { background-color: #8b8f8a; box-shadow: 0 0 3px #8b8f8a; }
+}
+.btn {
+  animation: glowing 3000ms infinite;
+}
+.wrapper {
+  transform: translate(-350px);
+  transition-duration: 400ms;
+}
+.wrapper:hover{
+  transform: translate(0);
+  transition-duration: 400ms;
+}

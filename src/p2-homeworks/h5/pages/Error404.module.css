@@ -1,0 +1,33 @@
+
+
+.wrapper div {
+  padding: 40px;
+  font-size: 55px;
+  font-family: 'Monoton', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+.rotated {
+  animation-duration: 7s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+@keyframes slidein {
+  0% {
+    margin-left: 100%;
+    /* width: 300%; */
+  }
+
+  50% {
+    margin-left: 0%;
+    /* width: 300%; */
+  }
+
+  100% {
+    margin-left: -120%;
+    /* width: 300%; */
+  }
+}
+
+

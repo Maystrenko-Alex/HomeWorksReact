@@ -1,6 +1,6 @@
-.default {
+/* .default {
  
-}
+} */
 
 .button_style {
     margin-top: 10px;
@@ -20,7 +20,9 @@
     text-align: center;
     text-decoration: none;
 }
-
+.button:hover {
+    color: red;
+}
 @keyframes glowing {
     0% { background-color: #8b8f8a; box-shadow: 0 0 3px #8b8f8a; }
     50% { background-color: #b5b8b4; box-shadow: 0 0 10px #b5b8b4; }
