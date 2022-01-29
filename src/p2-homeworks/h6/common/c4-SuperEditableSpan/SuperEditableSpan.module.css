@@ -1,0 +1,8 @@
+.span_style {
+  color: blue;
+  border: 1px solid black;
+  /* height: 50px;
+  width: 100px; */
+}
+
+/* вообще не прет стилизовать эту компоненту, может потом как будет хвостов поменьше */

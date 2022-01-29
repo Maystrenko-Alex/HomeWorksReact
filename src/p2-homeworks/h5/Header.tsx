@@ -9,7 +9,7 @@ function Header() {
             
             <NavLink 
               style={({ isActive }) =>({color: isActive ? 'red' : '', fontWeight: isActive ?  '700' : '500'})}
-              to={PATH.PRE_JUNIOR } >PRE_JUNIOR</NavLink>
+              to={PATH.PRE_JUNIOR || PATH.DEFAULT} >PRE_JUNIOR</NavLink>
             <NavLink 
               style={({ isActive }) =>({color: isActive ? 'red' : '', fontWeight: isActive ?  '700' : '500'})}
               to={PATH.JUNIOR} >JUNIOR</NavLink>
