@@ -10,23 +10,24 @@ const messageData = {
 function HW1() {
     return (
         <div>
-            <hr />
+            <hr/>
             homeworks 1
 
-
+            {/*should work (должно работать)*/}
 
             <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
+               avatar={messageData.avatar}
+               name={messageData.name}
+               message={messageData.message}
+               time={messageData.time}
             />
 
-            <hr />
-
-            <hr />
+            <hr/>
+            {/*для личного творчества, могу проверить*/}
+            {/*<AlternativeMessage/>*/}
+            <hr/>
         </div>
-    );
+    )
 }
 
 export default HW1
